@@ -1,4 +1,4 @@
-# aspcore2OnWin10IoT
+# Host HTTPS on a Win10IoT device
 Run a ASP.NET Core 2.0 webapplication on a Windows 10 IoT device (like the Pi)
 
 # Goal
@@ -14,3 +14,12 @@ This repo will explain how to get an ASP.NET Core app up and running on a Window
 # Summary
 1. Create the project
 2. Create a certificate
+3. Use kestral
+4. Publish
+5. Prepare device
+6. Run
+
+
+# Create the project
+Use visual studio to create an ASP.NET Core project, make sure you select .NET Core and ASP.NET Core 2.0 in the popup like so:
+
