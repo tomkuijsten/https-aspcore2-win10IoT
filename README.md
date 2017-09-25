@@ -21,5 +21,14 @@ This repo will explain how to get an ASP.NET Core app up and running on a Window
 
 
 # Create the project
-Use visual studio to create an ASP.NET Core project, make sure you select .NET Core and ASP.NET Core 2.0 in the popup like so:
+Use visual studio to create an ASP.NET Core project, make sure you select .NET Core and ASP.NET Core 2.0 in the popup. I choose the WebAPI template, but it should work with MVC as well.
+
+# Create the certificate
+To run a SSL enabled server, we need a certificate. I suppose you don't have one laying around, so let's create one.
+
+Open a powershell console (must be administrator) and run:
+
+```ps1
+$certData = New-SelfSignedCertificate -certstorelocation cert:\localmachine\my -dnsname localhost$pwd = ConvertTo-SecureString -String "p@ssw0rd" -Force -AsPlainTextExport-PfxCertificate -cert "cert:\localMachine\my\$($certData.Thumbprint) -FilePath c:\temp\testCertificate.pfx -Password $pwd
+```
 
