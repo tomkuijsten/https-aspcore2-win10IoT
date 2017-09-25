@@ -1,4 +1,4 @@
-# Host HTTPS on a Win10IoT device
+# Host an https webservice using ASP.NET Core 2.0 on a Win10IoT device
 
 ## Goal
 This repo will explain how to get an ASP.NET Core app up and running on a Windows 10 IoT device.
