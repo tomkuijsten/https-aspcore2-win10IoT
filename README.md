@@ -94,3 +94,5 @@ netsh advfirewall firewall add rule name="WebAPI test 5000" dir=in action=allow 
 Now, cd into the folder with you published app and run the .exe. You should see something like this:
 
 ![ps output](https://github.com/tomkuijsten/https-aspcore2-win10IoT/raw/master/docs/img/ps-start-webapi.PNG)
+
+... and that's it, happy coding all.
